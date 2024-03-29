@@ -1,0 +1,24 @@
+Project Structure:-
+quotes_web_app/
+│
+├── app/
+│   ├── utils/
+│   │   └── fun_1.py               # Utility file for logic functions
+│   ├── static/
+│   │   ├── css/
+│   │   │   └── style.css         # CSS stylesheets
+│   │   ├── js/
+│   │   │   └── script.js          # JavaScript code
+│   ├── templates/
+│   │   ├── base.html              # Base HTML template
+│   │   ├── index.html             # Homepage template
+│   │   ├── quote.html             # Quote detail template
+│   │   └── about.html             # About page template
+│   ├── __init__.py                # Flask app initialization
+│   ├── routes.py                  # Flask routes and views
+│   └── models.py                  # Python script for handling data models
+│
+├── config.py                      # Configuration settings
+├── requirements.txt               # List of Python dependencies
+├── run.py                         # Script to run the Flask app
+└── README.md                      # Project documentation
