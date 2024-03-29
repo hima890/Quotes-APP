@@ -1,3 +1,3 @@
 # Quotes-APP
 
-![Repo Imgae](repo_background.jpg)
+![Repo Imgae](background.jpg)
