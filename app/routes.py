@@ -28,4 +28,14 @@ def home():
     Returns:
         str: A string representing the HTML content to be displayed on the home page.
     """
-    return ("<h1>Test from the server</h1>")
+    return ("<h1>Test from the server, the home route</h1>")
+
+
+# Define the main Blueprint for the quotes author
+author_page = Blueprint('author', __name__,
+    template_folder='templates',
+    static_folder='static')
+
+@author_page.route("/author")
+def author():
+    return ("<h1>Test from the server, the author route</h1>")

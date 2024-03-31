@@ -15,8 +15,9 @@ def create_app(config_class=Config):
     quotes_app.config.from_object(Config)
     
     # Import routes module to ensure routes are registered using blueprrint
-    from app.routes import home_page
+    from app.routes import home_page, author_page
     quotes_app.register_blueprint(home_page)
+    quotes_app.register_blueprint(author_page)
 
     # Return the app object 
     return quotes_app
