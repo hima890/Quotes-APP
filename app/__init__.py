@@ -5,3 +5,14 @@ the app instance
 """
 
 from flask import Flask
+from config import Config
+
+# The app instance function
+def create_app(config_class=Config):
+    # The Flask class instaince 
+    quotes_app = Flask(__name__)
+    # Import the configration from config file
+    quotes_app.config.from_object(Config)
+    
+    # Return the app object 
+    return quotes_app

@@ -18,12 +18,13 @@ Attributes:
 from dotenv import load_dotenv
 import os
 
-# Load environment variables from .env file
-load_dotenv()
+class Config:
+    # Load environment variables from .env file
+    load_dotenv()
 
-# The app secret key string for usnig cockies and sessions
-SECRET_KEY = os.environ.get('FLASK_SECRET_KEY')
-# The app database link ("if not created the flask app will create it")
-SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
-# This logic var tell the flask app if we where in devolpment env or production env
-DEBUG = True
+    # The app secret key string for usnig cockies and sessions
+    SECRET_KEY = os.environ.get('FLASK_SECRET_KEY')
+    # The app database link ("if not created the flask app will create it")
+    SQLALCHEMY_DATABASE_URI = os.environ.get('DATABASE_URL')
+    # This logic var tell the flask app if we where in devolpment env or production env
+    DEBUG = True
