@@ -5,7 +5,7 @@ the app instance
 """
 
 from flask import Flask
-from config import Config
+from app.config import Config
 
 # The app instance function
 def create_app(config_class=Config):

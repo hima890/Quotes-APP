@@ -13,7 +13,7 @@ Example:
 """
 
 # Import the create_app function from the app module
-from .app import create_app
+from app import create_app
 
 # Create an instance of the Flask app
 quotes_app = create_app()
